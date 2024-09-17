@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c98401fa777ffa546ab68b8168461ca5, type: 3}
+  m_Name: ResponsesConfig
+  m_EditorClassIdentifier: 
+  iniCategory: 0
+  listName: 
+  responses:
+  - upperLineResponseText: IT IS
+    lowerLineResponseText: CERTAIN
+    orientation: 1
+    type: 0
+  - upperLineResponseText: IT IS
+    lowerLineResponseText: DECIDEDLY SO
+    orientation: 1
+    type: 0
+  - upperLineResponseText: WITHOUT A
+    lowerLineResponseText: DOUBT
+    orientation: 0
+    type: 0
+  - upperLineResponseText: YES
+    lowerLineResponseText: DEFINITELY
+    orientation: 1
+    type: 0
+  - upperLineResponseText: YOU MAY
+    lowerLineResponseText: RELY ON IT
+    orientation: 1
+    type: 0
+  - upperLineResponseText: AS I SEE IT
+    lowerLineResponseText: YES
+    orientation: 0
+    type: 0
+  - upperLineResponseText: MOST
+    lowerLineResponseText: LIKELY
+    orientation: 1
+    type: 0
+  - upperLineResponseText: OUTLOOK
+    lowerLineResponseText: GOOD
+    orientation: 0
+    type: 0
+  - upperLineResponseText: YES
+    lowerLineResponseText: 
+    orientation: 0
+    type: 0
+  - upperLineResponseText: SIGNS POINT
+    lowerLineResponseText: TO YES
+    orientation: 0
+    type: 0
+  - upperLineResponseText: REPLY HAZY
+    lowerLineResponseText: TRY AGAIN
+    orientation: 0
+    type: 1
+  - upperLineResponseText: ASK AGAIN
+    lowerLineResponseText: LATER
+    orientation: 0
+    type: 1
+  - upperLineResponseText: BETTER NOT TELL
+    lowerLineResponseText: YOU NOW
+    orientation: 0
+    type: 1
+  - upperLineResponseText: CAN'T
+    lowerLineResponseText: PREDICT NOW
+    orientation: 1
+    type: 1
+  - upperLineResponseText: CONCENTRATE AND
+    lowerLineResponseText: ASK AGAIN
+    orientation: 0
+    type: 2
+  - upperLineResponseText: DONT COUNT
+    lowerLineResponseText: ON IT
+    orientation: 0
+    type: 2
+  - upperLineResponseText: MY REPLY
+    lowerLineResponseText: IS NO
+    orientation: 0
+    type: 2
+  - upperLineResponseText: MY SOURCES
+    lowerLineResponseText: SAY NO
+    orientation: 0
+    type: 2
+  - upperLineResponseText: OUTLOOK NOT
+    lowerLineResponseText: SO GOOD
+    orientation: 0
+    type: 2
+  - upperLineResponseText: VERY
+    lowerLineResponseText: DOUBTFUL
+    orientation: 1
+    type: 2
