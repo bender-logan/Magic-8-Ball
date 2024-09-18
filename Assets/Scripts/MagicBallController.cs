@@ -147,7 +147,7 @@ public class MagicBallController : MonoBehaviour
             lowerShortText.gameObject.SetActive(false);
 
             // rotate die
-            //die.transform.localEulerAngles = new Vector3(0, 0, Random.Range(-randomTiltMax/2f, randomTiltMax/2f));
+            //transform.localEulerAngles = new Vector3(0, 0, UnityEngine.Random.Range(-randomTiltMax / 2f, randomTiltMax / 2f));
         }
         else
         {
@@ -166,7 +166,7 @@ public class MagicBallController : MonoBehaviour
             lowerLongText.gameObject.SetActive(false);
 
             // rotate die
-            //die.transform.localEulerAngles = new Vector3(0, 0, Random.Range(-randomTiltMax/2f, randomTiltMax/2f) + 180f);
+            //transform.localEulerAngles = new Vector3(0, 0, UnityEngine.Random.Range(-randomTiltMax / 2f, randomTiltMax / 2f) + 180f);
         }
 
     }
@@ -176,13 +176,16 @@ public class MagicBallController : MonoBehaviour
         float lerp = 0;
         bool revealFlag = false;
 
+        Quaternion targetRotation = longLineFirstBallRotation;
+        targetRotation = Quaternion.Euler(targetRotation.eulerAngles.x, targetRotation.eulerAngles.y, targetRotation.eulerAngles.z + UnityEngine.Random.Range(-randomTiltMax / 2f, randomTiltMax / 2f));
+
         while (lerp < 1)
         {
             lerp += Time.deltaTime / ballSnapTime;
 
             ballRb.transform.position = Vector3.Lerp(ballRb.transform.position, revealBallPosition, lerp);
 
-            ballRb.transform.rotation = Quaternion.Lerp(ballRb.transform.rotation, longLineFirstBallRotation, lerp);
+            ballRb.transform.rotation = Quaternion.Lerp(ballRb.transform.rotation, targetRotation, lerp);
 
             if (lerp >= 0.2f)
             {
@@ -201,7 +204,7 @@ public class MagicBallController : MonoBehaviour
         }
 
         ballRb.transform.position = revealBallPosition;
-        ballRb.transform.rotation = longLineFirstBallRotation;
+        ballRb.transform.rotation = targetRotation;
     }
 
     private IEnumerator RevealShortFirstCoroutine()
@@ -209,13 +212,16 @@ public class MagicBallController : MonoBehaviour
         float lerp = 0;
         bool revealFlag = false;
 
+        Quaternion targetRotation = shortLineFirstBallRotation;
+        targetRotation = Quaternion.Euler(targetRotation.eulerAngles.x, targetRotation.eulerAngles.y, targetRotation.eulerAngles.z + UnityEngine.Random.Range(-randomTiltMax / 2f, randomTiltMax / 2f));
+
         while (lerp < 1)
         {
             lerp += Time.deltaTime / ballSnapTime;
 
             ballRb.transform.position = Vector3.Lerp(ballRb.transform.position, revealBallPosition, lerp);
 
-            ballRb.transform.rotation = Quaternion.Lerp(ballRb.transform.rotation, shortLineFirstBallRotation, lerp);
+            ballRb.transform.rotation = Quaternion.Lerp(ballRb.transform.rotation, targetRotation, lerp);
 
             if (lerp >= 0.1f )
             {
@@ -234,6 +240,6 @@ public class MagicBallController : MonoBehaviour
         }
 
         ballRb.transform.position = revealBallPosition;
-        ballRb.transform.rotation = shortLineFirstBallRotation;
+        ballRb.transform.rotation = targetRotation;
     }
 }
