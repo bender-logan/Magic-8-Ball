@@ -1,3 +1,10 @@
+/** 
+  * @file CageController.cs
+  * @brief Manages size of cage
+  * 
+  * @author Logan Bender
+**/
+
 using UnityEngine;
 
 public class CageController : MonoBehaviour

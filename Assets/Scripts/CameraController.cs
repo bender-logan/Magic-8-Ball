@@ -1,13 +1,18 @@
-using Cinemachine;
-using System.Collections;
-using System.Collections.Generic;
+/** 
+  * @file CameraController.cs
+  * @brief Handles camera
+  * 
+  * @author Logan Bender
+**/
+
+using Unity.Cinemachine;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private CinemachineVirtualCamera rattleVirtualCamera;
-    [SerializeField] private CinemachineVirtualCamera revealVirtualCamera;
+    [SerializeField] private CinemachineCamera rattleVirtualCamera;
+    [SerializeField] private CinemachineCamera revealVirtualCamera;
 
     [SerializeField] private Vector3Event rattleEvent;
     [SerializeField] private VoidEvent shakeStopEvent;

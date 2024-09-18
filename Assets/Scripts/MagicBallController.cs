@@ -1,10 +1,8 @@
 /** 
   * @file MagicBallController.cs
-  * @brief Insert brief description here
+  * @brief Controls the magic 8 ball
   * 
   * @author Logan Bender
-  * 
-  * @copyright Universal Creative. All rights reserved.
 **/
 
 using System;

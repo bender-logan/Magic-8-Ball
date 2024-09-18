@@ -1,3 +1,10 @@
+/** 
+  * @file PhoneShakeDetector.cs
+  * @brief Detects input from device in the form of shaking the phone
+  * 
+  * @author Logan Bender
+**/
+
 using UnityEngine;
 using UnityAtoms.BaseAtoms;
 
